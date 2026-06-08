@@ -2,13 +2,13 @@
   hosts: frontend
   become: yes
   tasks:
-    - name: install nginx
-      package:
-        name: nginx
-        start: present
+  - name: install nginx
+    package:
+      name: nginx
+      start: present
       
-    - name: start nginx
-      service:
-        name: nginx
-        start: present
-        enabled: yes
+  - name: start nginx
+    service:
+      name: nginx
+      start: present
+      enabled: yes
