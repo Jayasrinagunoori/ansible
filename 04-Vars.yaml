@@ -3,9 +3,9 @@
   connection: local
   vars:
     COURSE: "Ansible"
-    Trainer: "Shiva"
+    TRAINER: "Shiva"
     DURATION: "150HRS"
 
   tasks:
   - debug:
-      msg: "Hi, I am learining {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}
+      msg: "Hi, I am learining {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION }}
