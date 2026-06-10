@@ -12,7 +12,6 @@
     debug:
       msg: "Hi, I am learning {{ COURSE }}, trainer is {{ TRAINER }}" 
 
-  tasks:
   - name: VINOD print information
     vars:
       COURSE: "Devops with Aiops"
