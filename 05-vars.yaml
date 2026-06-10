@@ -4,6 +4,7 @@
   vars: 
     COURSE: "Ansible"
     TRAINER: "Shivakumar"
+    DURATION: "10MIN"
 
   tasks:
   - name: JAYASRI print information
