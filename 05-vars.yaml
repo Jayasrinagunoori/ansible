@@ -1,0 +1,13 @@
+- name: demo on task level vafriables
+  hosts: local
+  connection: local
+  vars: 
+    COURSE: "Ansible"
+    TRAINER: "Shivakumar"
+
+  tasks:
+  - name: print information
+    vars:
+      COURSE: "Devops with Aiops"
+    debug:
+      msg: "Hi, I am learning {{ COURSE }}, trainer is {{ TRAINER }}" 
