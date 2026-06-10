@@ -6,8 +6,18 @@
     TRAINER: "Shivakumar"
 
   tasks:
-  - name: print information
+  - name: JAYASRI print information
     vars:
       COURSE: "Devops with Aiops"
     debug:
       msg: "Hi, I am learning {{ COURSE }}, trainer is {{ TRAINER }}" 
+
+  tasks:
+  - name: VINOD print information
+    vars:
+      COURSE: "Devops with Aiops"
+      TRAINER: "AAYANSH"
+    debug:
+      msg: "Hi, I am learning {{ COURSE }}, trainer is {{ TRAINER }}" 
+
+ 
