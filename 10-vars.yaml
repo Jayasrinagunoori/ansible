@@ -1,0 +1,24 @@
+- name: variables preference
+  hosts: frontend
+  vars:
+    - full_name: "Shiva from play"
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: full_name
+    prompt: "Please enter your full_name"
+    private: false
+  tasks:
+  - name: print vars preference
+    vars:
+      full_name: "Shiva from task level"
+    debug:
+      msg: "Hi, {{ full_name }}"
+
+# Preference
+# 1. CMD args
+# 2. Task
+# 3. Vars_files
+# 4. vars_prompt
+# 5. play
+# 6. inventory
